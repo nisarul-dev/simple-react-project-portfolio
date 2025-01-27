@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Home() {
   return (
     <>
@@ -7,11 +9,11 @@ function Home() {
                 <div className="text-center space-y-6">
                 <h1 className="text-6xl font-bold">Hi, I&apos;m Nisarul Amin Naim</h1>
                 <p className="text-xl font-light">Web Developer | Creative Thinker | Problem Solver</p>
-                <a href="/projects">
+                <Link to="/projects" className="hover:text-gray-400 p-2">
                     <button className="bg-white text-purple-600 px-6 py-3 rounded-lg shadow-md hover:bg-gray-100">
-                    View My Projects
+                        View My Projects
                     </button>
-                </a>
+                </Link>
                 </div>
             </div>
 
